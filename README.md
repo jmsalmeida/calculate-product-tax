@@ -18,5 +18,5 @@ ruby lib/application.rb
 ## Running tests
 
 ```
-rspec
+rspec spec/*
 ```

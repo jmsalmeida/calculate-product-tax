@@ -17,13 +17,13 @@ loop do
 
     added_products.each do |product|
       sales_taxes += product.applied_taxes
-      sales_total += (product.total_price)
+      sales_total += product.total_price
 
       puts product.inline_basic_info
     end
 
-    puts "Sales Taxes: #{sales_taxes.round(2)}"
-    puts "Total: #{sales_total.round(2)}"
+    puts "Sales Taxes: #{sales_taxes}"
+    puts "Total: #{sales_total}"
 
     break
   end

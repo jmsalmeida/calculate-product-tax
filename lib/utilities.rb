@@ -8,4 +8,8 @@ module Utilities
     answer = answer.empty? ? 'no' : answer
     answer.upcase == 'YES' ? true : false
   end
+
+  def round_tax(tax)
+    return ((tax * 20).ceil.to_f) / 20
+  end
 end
